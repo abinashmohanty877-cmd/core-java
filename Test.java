@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 abstract class A{
     abstract void m1();
 }
@@ -12,3 +13,8 @@ public class Test{
         a1.m1();
     }
 }
+=======
+public class Test {
+    
+}
+>>>>>>> b321e7d (Raw)
