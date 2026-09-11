@@ -1,20 +1,22 @@
-<<<<<<< HEAD
-abstract class A{
-    abstract void m1();
+ class con3{
+    con3(){
+        this ("abc");
+            System.out.println("thor");
+    }
+        con3(String s){
+                System.out.println("hulk");
+
+    }
 }
-class B extends A{
-    public void m1(){
-        System.out.println("it is a example of abtsract modifier");
+class B extends con3{
+    B(int x){
+        super();
+        System.out.println("iron man");
     }
 }
 public class Test{
-    public static void main(String[] args) {
-        A a1 = new B();
-        a1.m1();
+        public static void main(String[] args){
+        B b1 = new B(10);
+        con3 a1 = new con3();
     }
 }
-=======
-public class Test {
-    
-}
->>>>>>> b321e7d (Raw)
