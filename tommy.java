@@ -1,26 +1,30 @@
-public class tommy {
-    public Object m1()
-    {
-        System.out.println("tommyyy");
-        return 10;
-    }
-}
-class B extends tommy
+public class tommy
 {
-    public String m1()
+    public void m1()
     {
-        System.out.println("dogs");
-        return null;
+      System.out.println("lion");  
+    }
+    class B extends tommy
+    {
+        public void m2()
+        {
+            System.out.println("child lion");
+        }
     }
 }
-class Test 
+class c extends tommy
 {
-    public static void main(String[] args) {
-        B b = new B();
-        b.m1();
-        tommy t = new tommy();
-        t.m1();
+    public void m3()
+    {
+        System.out.println("grand child lion");
     }
 }
-
-    
+class test
+{
+    public static void main(String[] args)
+    {
+        c obj = new c();
+        obj.m1();
+        obj.m3();
+    }
+}
