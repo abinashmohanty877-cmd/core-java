@@ -1,15 +1,18 @@
 class Test
 {
-    int x=10;
-    public void m1(int x)
+    public void m1()
     {
-        System.out.println(x);
-        System.out.println(this.x);
+        System.out.println("bmw");
     }
-    public static void main(String[] args)
+    public void m2()
+    {
+        System.out.println("audiiii");
+    }
+    public static void main (String[] args)
     {
         Test t1 = new Test();
-        t1.m1(15);
+        t1.m1(); 
+         t1.m2();
     }
     
 }
