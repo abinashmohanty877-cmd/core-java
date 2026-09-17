@@ -1,10 +1,10 @@
 class Demo{
-    public void m1()
+    public void show(int a)
     {
-        System.out.println("thorrrr");
+        System.out.println(a);
     }
     public static void main(String[] args){
-        Demo d1 = new Demo();
-    d1.m1();   
-}
+        Demo d = new Demo();
+        d.show(10);
+    }
 }
