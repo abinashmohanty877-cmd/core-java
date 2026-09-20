@@ -1,12 +1,18 @@
-class Test{
-    public float m1 ()
+class phone{
+    public void vivo(int price)
     {
-        return 10.5f;
+        System.out.println(price);
     }
-    public static void main(String[] args)
+    public void samsung(String color)
     {
-        Test t1 = new Test();
-          t1.m1();
-        System.out.println(result);
+        System.out.println(color);
+    }
+}
+class Test{
+    public static void main(String[]args)
+    {
+        phone k = new phone();
+        k.vivo(5455474);
+        k.samsung("black");
     }
 }
