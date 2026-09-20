@@ -1,18 +1,24 @@
-class phone{
-    public void vivo(int price)
+class A{
+    public void m1()
     {
-        System.out.println(price);
-    }
-    public void samsung(String color)
-    {
-        System.out.println(color);
+        System.out.println("ktm");
     }
 }
+    class B extends A{
+        public void m1()
+        {
+            System.out.println("bullet");
+        }
+    
+
+}
 class Test{
-    public static void main(String[]args)
-    {
-        phone k = new phone();
-        k.vivo(5455474);
-        k.samsung("black");
+    public static void main(String[] args){
+        A a1 = new A();
+        a1.m1();
+        B b1 = new B();
+        b1.m1();
+        A a2 = new B();
+        a2.m1();
     }
 }
