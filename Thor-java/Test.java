@@ -1,13 +1,12 @@
-class Test {
-    public void m1(int f, int s)
+class Test{
+    public void m1(String name)
     {
-        System.out.println(f+s);
+        System.out.println(name);
     }
     public static void main(String[] args)
     {
-        Test n1 = new Test();
-        n1.m1(545,4546847);
+        Test t1 = new Test();
+        t1.m1("abhiiiii");
     }
 
-    
 }
