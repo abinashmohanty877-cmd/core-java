@@ -1,14 +1,19 @@
-class Test{
-    void test()
+class Main {
+    void show(String name)
     {
-        System.out.println("abc");
+        System.out.println("Name : " + name);
     }
-    Test()
+    void show(int[] numbers)
     {
-        System.out.println("deff");
+
+        System.out.println("Array method");
     }
-    public static void main(String[] args){
-        Test t1 = new Test();
-        t1.test();
+}
+public class Test {
+    public static void main(String[] args) {
+        Main t = new Main();
+        t.show("John");
+        int[] arr = {1, 2, 3, 4, 5};
+        t.show(arr);
     }
 }
