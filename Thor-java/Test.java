@@ -1,12 +1,18 @@
 interface A{
-    public static void m1()
+    default void m1()
     {
-        System.out.println("abhiiiiiii");
+    System.out.println("johnnn");
     }
 }
-class Test implements A
-{
-    public static void main (String[] args){
-        A.m1();
-    }
+class Test implements A {
+    
+        public void m1()
+        {
+            System.out.println("motuuuu");
+        }
+        public  static void main(String[] args){
+            Test t1 = new Test();
+            t1.m1();
+        }
+    
 }
