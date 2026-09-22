@@ -1,19 +1,26 @@
-class Main {
-    void show(String name)
-    {
-        System.out.println("Name : " + name);
-    }
-    void show(int[] numbers)
-    {
+interface A{
+    public void m1(int x);
 
-        System.out.println("Array method");
-    }
 }
-public class Test {
-    public static void main(String[] args) {
-        Main t = new Main();
-        t.show("John");
-        int[] arr = {1, 2, 3, 4, 5};
-        t.show(arr);
+interface B{
+    public void m1(int y);
+}
+class Test implements A , B{
+    public void m1(int x){
+        System.out.println("abinash mohanty");
     }
+
+public static void main(String[] args0){
+    Test t = new Test();
+    t.m1(1000);
+    
+    A a = t;
+    a.m1(5565);
+
+    B b = t;
+    b.m1(5555);
+
+
+}
+
 }
