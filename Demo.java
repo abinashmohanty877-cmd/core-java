@@ -1,17 +1,11 @@
 class Demo
 {
-    void Demo()
+    static int x = 10;
+    static 
     {
-        System.out.println("abc");
+        System.out.println(x);
     }
-    Demo()
-    {
-        System.out.println("deff");
-    }
-    public static void main(String[] args)
-    {
-        Demo d1 = new Demo();
-        d1.Demo();
-    }
+    public static void main(String[] args){
 
+    }
 }
