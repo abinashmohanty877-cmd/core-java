@@ -1,11 +1,10 @@
-class Demo
-{
-    static int x = 10;
-    static 
+class Demo{
     {
-        System.out.println(x);
+        System.out.println("block");
+        new Demo();
     }
-    public static void main(String[] args){
-
+    public static void main(String[] args)
+    {
+        new Demo();
     }
 }
