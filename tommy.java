@@ -19,7 +19,7 @@ class c extends tommy
         System.out.println("grand child lion");
     }
 }
-class test
+class Test
 {
     public static void main(String[] args)
     {
