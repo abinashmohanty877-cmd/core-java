@@ -1,26 +1,22 @@
-interface A { 
-    void showA(); 
-} 
 
-interface B { 
-    void showB(); 
-} 
+interface A {
+    void show();
+}
 
-// Implement both interfaces in class C
-class C implements A, B { 
-    public void showA() { 
-        System.out.println("dogger man"); 
-    } 
+interface B {
+    void show();
+}
+
+class C implements A, B {
     
-    public void showB() { 
-        System.out.println("goattt"); 
-    } 
-} 
+    public void show() {
+        System.out.println("what a man broooo");
+    }
+}
 
-public class Main { 
-    public static void main(String[] args) { 
-        C b1 = new C(); 
-        b1.showA(); 
-        b1.showB(); 
-    } 
+public class Main {
+    public static void main(String[] args) {
+        C obj = new C();
+        obj.show();
+    }
 }
