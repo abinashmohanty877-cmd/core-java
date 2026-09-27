@@ -1,33 +1,17 @@
-class Test { 
-    public static void main(String[] args) { 
-        // Part 1: testing the 'Thorr' Singleton
-        Thorr t1 = Thorr.getThorr(); 
-        Thorr t2 = Thorr.getThorr(); 
-        System.out.println(t1 == t2); // Prints: true
+class Test {
+    
+    void show(String name) {
+        System.out.println("string " + name);
+    }
+
+    void show(Thorr name) {
+        System.out.println("Thorr object: " + name);
+    }
+
+    public static void main(String[] args) {
+        Test t1 = new Test();
         
-        // Part 2: testing the 'Test' Singleton
-        TestObj to1 = TestObj.getTestObj(); 
-        TestObj to2 = TestObj.getTestObj(); 
-        System.out.println(to1 == to2); // Prints: true
-    } 
-}
-
-class Thorr {
-    private static final Thorr instance = new Thorr();
-    
-    private Thorr() {} // Private constructor prevents instantiation
-    
-    public static Thorr getThorr() {
-        return instance;
+        t1.show("abhiiii");
     }
 }
-
-class TestObj { 
-    private static final TestObj t = new TestObj(); 
-    
-    private TestObj() {}
-    
-    public static TestObj getTestObj() {
-        return t; 
-    }
-}
+class Thorr {}
